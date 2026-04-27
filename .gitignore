@@ -10,9 +10,10 @@ __pycache__/
 .env
 *.env.local
 
-# 大体积赛题数据 / 模型 / 索引（在新机器上重新下载/构建）
-data/KnowledgeBase/
+# 大体积压缩包（超 GitHub 100MB 单文件限制）
 data/KownledgeBase.zip
+
+# 模型 / 索引（在新机器上自动下载/构建）
 index/
 models/
 
