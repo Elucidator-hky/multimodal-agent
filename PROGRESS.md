@@ -1,88 +1,82 @@
 # 项目进度
 
-更新时间：2026-04-26
+更新时间:2026-04-28
 
 ## 已完成
 
-### 1. 数据/题目分析
-- 22 份中文产品手册 + 2608 张插图 + 1 份英文汇总手册
-- 400 题分布：通用客服 ~37（9%）/ 中文产品 ~162（41%）/ 英文产品 ~187（47%）/ 边界 ~14（3%）
-- 提交格式：产品题 `"文本(<PIC>)", ["id1","id2"]` / 客服题 `"纯文本"`
+### 1. 数据 / 题目分析
+- 22 份产品手册(20 中文 + 1 汇总英文 + 1 英文摄像)+ 2608 张插图
+- 400 题分布:通用客服 ~37(9%) / 中文产品 ~162(41%) / 英文产品 ~187(47%) / 边界 ~14(3%)
+- 提交格式:产品题 `["文本(<PIC>)", ["id1","id2"]]` / 客服题 `"纯文本"`
 
-### 2. 比赛规则
-- 评分：LLM 裁判 1-5 分（看图文配合 + 回答质量 + 结构）
-- 初赛：系统设计 30% + 技术实现 70%
-- A 榜（现在 ~ 6/20）csv 提交 / B 榜 6/20 开放 / 决赛 8 月线下
-- 当前榜首 0.7300（满分 1.0）
+### 2. 技术栈
+| 层 | 用什么 |
+|---|---|
+| 流程编排 | **LangGraph** 1.1(节点 + 条件边) |
+| RAG 框架 | **LlamaIndex** 0.14(只用检索部分,生成自己写) |
+| Embedding | **BAAI/bge-m3**(多语言,1024 维,GPU fp16) |
+| 向量库 | FAISS(IndexFlatIP,内积=余弦) |
+| LLM | **qwen-plus**(阿里云 DashScope OpenAI 兼容) |
+| 切块策略 | **LLM 语义切块**(qwen-plus 给每份手册输出 sections) |
 
-### 3. 技术选型
-- 框架：**LangGraph**（节点+边图编排，可控、可调试、模型无关）
-- 模型：**Qwen-Plus**（阿里云 DashScope，国内调用稳，单价 ¥0.0008/0.002 千 token）
-- 决赛阶段再考虑加 VLM（多模态看图）
-
-### 4. Agent 架构设计
-
-5 节点流程：
+### 3. Agent 架构(5 节点全部完成 ✅)
 
 ```
-START → router → ┬─ rag_search → generate → format_output → END
-                 └─ service_gen ─────────→ format_output → END
+START → router ─┬→ rag_search → generate ─┐
+                └→ service_gen ────────────┴→ format_output → END
 ```
 
-| 节点 | 职责 | 状态 |
-|------|------|------|
-| router | 意图分类（产品题 / 客服题） | ⬜ 待写 |
-| rag_search | FAISS 检索手册 | ⬜ 待写（复用 baseline 的 KnowledgeBase） |
-| generate | 用 chunks 生成产品题答案（含 `<PIC>`） | ⬜ 待写 |
-| service_gen | 直接生成客服话术（无图） | ✅ 完成 |
-| format_output | 拼成官方提交格式 | ⬜ 待写 |
+| 节点 | 状态 | 实现 |
+|---|---|---|
+| `router` | ✅ | 32 题 100% 准确率,qwen-plus 二分类 |
+| `service_gen` | ✅ | 12 题客服话术 eval 通过 |
+| `rag_search` | ✅ | 包装 LlamaIndex retriever,top-5 |
+| `generate` | ✅ | qwen-plus 生成 + 抠 [[PIC:xxx]] → image_ids |
+| `format_output` | ✅ | 拼成官方提交格式(JSON 数组 / 纯文本) |
 
-### 5. 代码骨架
+### 4. 知识库
 
-- `src/state.py` — LangGraph State（6 字段）
-- `src/hello_graph.py` — 1 节点 hello world（验证 LangGraph 工作）
-- `src/nodes/service_gen.py` — service_gen 节点 + system prompt
-- `evals/run_service_gen.py` — 并发跑 12 题（3 官方 + 9 csv）+ 输出 markdown
-- `history_code/` — baseline 老代码（参考，已不直接使用）
+- **LLM 切块缓存**: `data/chunks_llm/*.json`(22 份手册 → 2330 个 sections,主题纯)
+  - 每个 section 含 `title`、`text`(保留 `[[PIC:xxx]]` 占位符)
+  - 已 commit,新机器无需重新调用 LLM 切块
+- **FAISS 索引**: `index/`(不提交,新机器跑一次 `python -m src.knowledge_base` 重建,GPU 几分钟)
+- **bge-m3 模型**: `models/`(不提交,~4.3GB,首次自动从 HuggingFace 下载,带镜像)
 
-### 6. service_gen 节点效果
+### 5. Eval 结果
 
-12 题 eval（耗时 6 秒，¥0.009）：
-- ✅ 风格学到位：开头"您好"、共情、具体数字、给方案、不甩锅
-- ✅ 长度控制：80-130 字（接近官方）
-- ✅ 纯文本：无 emoji / markdown / 列表符号
-- ✅ 口语化：去掉了专业术语
-- 预估 4 分稳，部分 5 分
+**RAG 检索 eval(30 题)**:
+- 手册级 Recall@1 = 96.7%, Recall@3/5 = 100%
+- 块级 Recall@5 = 96.7%(LLM 标注关键词验证)
 
-prompt 关键设计：
-- 3 个官方范例 few-shot
-- 11 条风格约束（共情、数字、长度、格式、口语化等）
+**Router eval(32 题)**: 100% 准确率
+
+**端到端 eval(34 题)**:
+- 路由准确率 34/34
+- 平均耗时 4.6s/题
+- 答案质量良好(产品题步骤完整、客服话术规范)
+
+### 6. 不上 reranker 的实测原因
+
+bge-reranker-v2-m3 加了反而让块级 Recall@1 从 76.7% → 60.0%(再加 source 上下文恢复到 66.7%,仍低于无 reranker)。
+
+原因:cross-encoder 对短 chunk 的字面词共现过敏,把"清洁空气滤网"(空调手册)误判高于"滤网清洁步骤"(净化器手册)。
+真正的产品歧义解决方案:**让 router 输出具体产品名 + rag_search metadata 过滤**(后续 Round 2 优化)。
 
 ## 待办
 
-按优先级：
-
-1. **router 节点**（产品 / 客服 二分类，调一次轻量 LLM）
-2. **rag_search 节点**（包装 baseline 的 `KnowledgeBase.search`）
-3. **generate 节点**（产品题：用 chunks 生成回答 + 提取图片 ID）
-4. **format_output 节点**（拼成 `"文本", [id]` 双段格式）
-5. **agent_graph.py**（用上面 5 节点 + 边组装）
-6. **跑全量 400 题** → 提交 A 榜 → 看真实分数
-7. **优化方向**（按真实分数决定）：
-   - 多语言 embedding（bge-m3）解决英文题
-   - reranker 提升 RAG 质量
-   - VLM 节点（决赛用）
-
-## 当前已知问题 / 决策
-
-- **API key 通过 .env 读取**，不提交到 git。新机器需复制 .env.example 为 .env 并填 key。
-- **赛题数据不提交**（134MB 太大）。新机器需从官网重新下载。
-- **FAISS 索引不提交**（生成后约 1.5MB，但避免与代码耦合，新机器跑一次构建脚本即可）。
-- **Embedding 模型不提交**（在 `models/BAAI/`，新机器自动下载）。
+1. **跑全量 400 题** → 提交 A 榜 → 看真实分数
+2. **Round 2 优化**(看 A 榜分数决定):
+   - router 升级输出具体产品名(从 product/service → product:{产品} / service)
+   - rag_search 加 metadata filter(只在该产品手册搜)
+   - 解决:同主题章节跨产品手册的混淆(空调 vs 空气净化器)
+3. **决赛准备**:
+   - REST API(`/chat`,支持流式)
+   - LangGraph checkpointer(多轮会话)
 
 ## 关键文件路径
 
-- API key：`D:\code\server\PROFILE.md`（开发机本地）
-- 赛题数据：`data/`（不提交）
-- 现有 FAISS 索引：`index/faiss.index`（不提交）
-- baseline 旧代码：`history_code/`（已提交参考）
+- API key: `.env`(从 `.env.example` 复制)
+- 模型缓存: `models/`(自动下载,4.3GB)
+- 索引: `index/`(本地构建)
+- LLM 切块缓存: `data/chunks_llm/`(已 commit)
+- Eval 报告: `evals/output/`(本地生成)

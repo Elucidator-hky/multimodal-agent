@@ -37,8 +37,12 @@ CHUNKS_PATH = os.path.join(INDEX_DIR, "chunks.pkl")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output")
 SUBMISSION_FILE = os.path.join(OUTPUT_DIR, "submission.csv")
 
-# Embedding 模型
-EMBEDDING_MODEL = "BAAI/bge-small-zh-v1.5"
+# Embedding 模型(bge-m3 多语言,1024 维)
+EMBEDDING_MODEL = "BAAI/bge-m3"
+EMBED_DIM = 1024
+
+# 模型缓存目录(避免反复下载)
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
 
 # Qwen API（阿里云 DashScope OpenAI 兼容接口）
 # Key 从环境变量读取，新机器需在 .env 文件中配置 QWEN_API_KEY

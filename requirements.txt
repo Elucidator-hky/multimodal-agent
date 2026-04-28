@@ -1,8 +1,25 @@
-fastapi>=0.104.0
-uvicorn>=0.24.0
+# 核心运行时
 openai>=1.6.0
-faiss-cpu>=1.7.4
-sentence-transformers>=2.2.2
 pandas>=2.0.0
 numpy>=1.24.0
 jieba>=0.42.1
+
+# Web framework(决赛 REST API 用)
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# RAG 栈:LangGraph 编排 + LlamaIndex 检索 + FAISS 向量库 + bge-m3 embedding
+langgraph>=1.1
+llama-index-core>=0.14
+llama-index-vector-stores-faiss>=0.6
+llama-index-embeddings-huggingface>=0.7
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+
+# Reranker(默认未启用,bge-reranker-v2-m3 在我们数据上反而降分)
+# 如需启用,取消下行注释 + 在 search_manuals 设 use_reranker=True
+
+# 注意:PyTorch 不在这里固定版本。
+# - GPU 用户(强烈推荐): pip install torch --index-url https://download.pytorch.org/whl/cu126
+# - CPU only:           pip install torch
+# - 详见 README.md

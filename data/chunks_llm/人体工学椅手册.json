@@ -1,0 +1,71 @@
+{
+  "manual_name": "人体工学椅手册",
+  "n_parts": 1,
+  "parts": [
+    {
+      "sub_index": 0,
+      "sections": [
+        {
+          "title": "组装前注意事项",
+          "text": "请阅读本手册 \n 在阅读并理解本手册中的说明前，请勿使用本产品。请妥善保管本手册以备日后查阅。检查各类配件 \n 配件详情 \n[[PIC:Manual02_0]]"
+        },
+        {
+          "title": "安装脚轮与气杆",
+          "text": "使用椅子前须知 安装说明 请保留原包装箱，以备可能需要退换产品时使用。用螺丝将 C1 与 C2 组装在一起 \n[[PIC:Manual02_1]] 安装脚轮。用底座盖盖住底座中心，并安装气杆。"
+        },
+        {
+          "title": "底盘与脚踏安装",
+          "text": "[[PIC:Manual02_2]] 安装底盘。[[PIC:Manual02_3]] 安装脚踏，然后套上橡胶圈。"
+        },
+        {
+          "title": "座椅与椅背连接安装",
+          "text": "[[PIC:Manual02_4]] 将座椅放置在气杆上。[[PIC:Manual02_5]] 在椅背上安装连接件。[[PIC:Manual02_6]] 将连接件安装到底盘后端。[[PIC:Manual02_7]]"
+        },
+        {
+          "title": "扶手与枕垫安装",
+          "text": "对准螺丝孔并安装扶手。[[PIC:Manual02_8]] 安装头枕与腰枕。[[PIC:Manual02_9]] 组装完成。[[PIC:Manual02_10]]"
+        },
+        {
+          "title": "扶手松动问题解答",
+          "text": "常见问题：Q：使用一段时间后扶手变松怎么办？A：大多数情况下，扶手和椅背的螺丝会在使用一段时间后松动，重新拧紧螺丝即可解决问题。"
+        },
+        {
+          "title": "高度调节操作方法",
+          "text": "# 高度调节[[PIC:Manual02_11]] 向上拉起 “升降” 拉杆即可调节椅子高度，到达所需高度后松开 “升降” 拉杆。调节高度时请将身体微微抬离座椅。"
+        },
+        {
+          "title": "椅背后仰功能说明",
+          "text": "[[PIC:Manual02_12]] 椅背后仰功能[[PIC:Manual02_13]] 向上拉起 “后仰” 拉杆，椅背角度可随人体动作独立倾斜。向下按下 “后仰” 拉杆，椅背角度即可锁定。将椅背复位至正常位置时请靠在椅背上，否则椅背可能会快速回弹。"
+        },
+        {
+          "title": "腰枕按摩功能启用",
+          "text": "[[PIC:Manual02_14]] 按摩功能 \n 插入 USB 即可启用腰枕的按摩功能。\n[[PIC:Manual02_15]]"
+        }
+      ],
+      "metrics": {
+        "n_sections": 9,
+        "char_coverage": 0.9930458970792768,
+        "char_exact": false,
+        "pic_count_match": true,
+        "pic_order_match": true,
+        "n_pics_orig": 16,
+        "n_pics_new": 16,
+        "length_min": 56,
+        "length_max": 126,
+        "length_avg": 84,
+        "issues": [
+          "字符覆盖 99.30%(差 5 字)"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 770,
+        "completion_tokens": 696,
+        "total_tokens": 1466,
+        "cost_yuan": 0.002008
+      }
+    }
+  ],
+  "total_sections": 9,
+  "total_pics": 16,
+  "total_cost_yuan": 0.002008
+}

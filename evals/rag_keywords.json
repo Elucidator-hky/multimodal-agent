@@ -1,0 +1,608 @@
+{
+  "keywords_by_id": {
+    "64": [
+      "听力防护装备",
+      "眼部防护装备",
+      "面罩"
+    ],
+    "74": [
+      "极速制冷",
+      "极速制热",
+      "18 摄氏度的温度强风出风"
+    ],
+    "83": [
+      "每两周清洁一次",
+      "握住空气滤网的把手",
+      "温水冲洗"
+    ],
+    "86": [
+      "主机身固定扣（部件 15）",
+      "旋转拖头（部件 18）",
+      "咔嗒声到位"
+    ],
+    "89": [
+      "座椅放置在气杆上",
+      "椅背上安装连接件",
+      "连接件安装到底盘后端"
+    ],
+    "95": [
+      "洗涤剂盒盖",
+      "15cm³ 或 25cm³ 刻度线",
+      "向右推动卡扣"
+    ],
+    "109": [
+      "吸尘器或软刷清洁预过滤网",
+      "滤网更换指示灯将亮起红色"
+    ],
+    "113": [
+      "最大使用者重量：136 千克",
+      "220V–240V 交流电",
+      "EN ISO 20957 国际标准"
+    ],
+    "124": [
+      "DCB101指示灯工作状态",
+      "过热/过冷延迟",
+      "电池组或充电器故障"
+    ],
+    "130": [
+      "三年有限保修",
+      "DC9071",
+      "保修欺诈"
+    ],
+    "131": [
+      "小号表带",
+      "充电线",
+      "大号表带"
+    ],
+    "145": [
+      "皮肤可能粘连在极冷表面",
+      "切勿将玻璃制品放入冷冻室"
+    ],
+    "153": [
+      "关闭发动机",
+      "严禁吸烟",
+      "燃油洒在发动机或消音器上"
+    ],
+    "168": [
+      "AE01096",
+      "放油接头①",
+      "上限位置"
+    ],
+    "174": [
+      "登艇平台",
+      "扶手",
+      "登艇台阶①"
+    ],
+    "182": [
+      "注水螺塞",
+      "放水螺塞",
+      "反冲启动器"
+    ],
+    "192": [
+      "电池低电量图标",
+      "两分钟内完成电池更换",
+      "永久存储在内存中"
+    ],
+    "199": [
+      "游玩区域",
+      "立即停止使用",
+      "每游玩1小时，休息15分钟"
+    ],
+    "204": [
+      "CAM软件",
+      "板载配置文件"
+    ],
+    "207": [
+      "前轴",
+      "把手管",
+      "垫片"
+    ],
+    "213": [
+      "电量 LED 指示灯",
+      "琥珀色",
+      "控制面板 > 鼠标 > 蓝牙"
+    ],
+    "217": [
+      "抬起卡扣",
+      "向前推至极限位置"
+    ],
+    "222": [
+      "烤架（图3）",
+      "凸面朝上",
+      "支架"
+    ],
+    "232": [
+      "打印模式选择器",
+      "AUTO",
+      "图像保存后立即开始打印"
+    ],
+    "241": [
+      "preheating",
+      "smoke",
+      "first time"
+    ],
+    "244": [
+      "handlebars",
+      "jet thrust nozzle",
+      "trolling speed"
+    ],
+    "250": [
+      "jet wash switch",
+      "jet wash handle lever",
+      "shut-off valve"
+    ],
+    "255": [
+      "oil-fill cap",
+      "dipstick",
+      "Figure 59"
+    ],
+    "265": [
+      "press Espresso button for 3 seconds",
+      "blink to indicate current setting",
+      "power off mode after 30 minutes"
+    ],
+    "268": [
+      "emptying mode",
+      "blink alternatively"
+    ]
+  },
+  "details": [
+    {
+      "id": "64",
+      "question": "使用吹风机时，人员需要佩戴哪些防护装备？",
+      "old_keywords": [
+        "佩戴",
+        "防护"
+      ],
+      "new_keywords": [
+        "听力防护装备",
+        "眼部防护装备",
+        "面罩"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "吹风机手册.txt",
+      "chosen_text_preview": "# 个人防护装备 使用吹风机的人员需佩戴以下防护装备： 1. 合格的听力防护装备 2. 合格的眼部防护装备。 3. 在多尘环境中操作时佩戴面罩。 4. 防滑鞋底的工作靴或工作鞋 5. 急救箱。 [[PIC:Manual04_3]]"
+    },
+    {
+      "id": "74",
+      "question": "如何用空调快速调节室内温度？",
+      "old_keywords": [
+        "快速",
+        "温度"
+      ],
+      "new_keywords": [
+        "极速制冷",
+        "极速制热",
+        "18 摄氏度的温度强风出风"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "空调手册.txt",
+      "chosen_text_preview": "# 高级功能 \n 本空调配备多种实用的高级功能。\n# 快速调节室内温度 \n（极速制冷 / 制热模式）\n 该模式可在夏季快速冷却室内空气，或在冬季快速提升室内温度。\n1 按下开 / 关键开启电源。\n2 按下极速键。\n[[PIC:Manual01_16]]\n- 极速制冷模式下，空调将以 18 摄氏度的温度强风出风 30 分钟。\n- 极速制热模式下，空调将以 30 摄氏度的温度强风出风 30 分钟。\n#"
+    },
+    {
+      "id": "83",
+      "question": "如何清洁空调的空气滤网?",
+      "old_keywords": [
+        "清洁",
+        "滤网"
+      ],
+      "new_keywords": [
+        "每两周清洁一次",
+        "握住空气滤网的把手",
+        "温水冲洗"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "空调手册.txt",
+      "chosen_text_preview": "# 清洁空气滤网 \n 建议每两周清洁一次空气滤网，必要时可增加清洁频率。\n1 关闭电源并拔下电源线。\n2 打开前盖板，轻轻掀起盖板两侧即可。\n[[PIC:Manual01_29]]\n* 功能会根据机型有所调整。\n3 握住空气滤网的把手，轻轻向上提起，将其从机身中取出。\n[[PIC:Manual01_30]]\n* 功能会根据机型有所调整。\n4 用吸尘器清理滤网，或用温水冲洗，若滤网污垢较难清理，可在"
+    },
+    {
+      "id": "86",
+      "question": "如何快速组装蒸汽清洁机？",
+      "old_keywords": [
+        "组装"
+      ],
+      "new_keywords": [
+        "主机身固定扣（部件 15）",
+        "旋转拖头（部件 18）",
+        "咔嗒声到位"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "蒸汽清洁机手册.txt",
+      "chosen_text_preview": "# 蒸汽清洁机组装说明 # 无需专用工具 1. 将主机身固定扣（部件 15）从主机身（部件 7）背部取下。 \n2. 将主机身底部滑入旋转拖头（部件 18）颈部。 [[PIC:Manual05_3]] 图中主机身与旋转拖头背部的孔位已用白色标注以便识别。 3. 确保旋转拖头颈部背部的孔位与主机身孔位对齐。 \n4. 将主机身固定扣（部件 15）插入主机身背部孔位，将两部分锁紧。 [[PIC:Manua"
+    },
+    {
+      "id": "89",
+      "question": "组装人体工学椅涉及哪些部件？",
+      "old_keywords": [
+        "组装",
+        "部件"
+      ],
+      "new_keywords": [
+        "座椅放置在气杆上",
+        "椅背上安装连接件",
+        "连接件安装到底盘后端"
+      ],
+      "chosen_chunk_idx": 5,
+      "chosen_source": "人体工学椅手册.txt",
+      "chosen_text_preview": "[[PIC:Manual02_4]] 将座椅放置在气杆上。[[PIC:Manual02_5]] 在椅背上安装连接件。[[PIC:Manual02_6]] 将连接件安装到底盘后端。[[PIC:Manual02_7]]"
+    },
+    {
+      "id": "95",
+      "question": "如何为洗碗机添加洗涤剂？",
+      "old_keywords": [
+        "洗涤剂"
+      ],
+      "new_keywords": [
+        "洗涤剂盒盖",
+        "15cm³ 或 25cm³ 刻度线",
+        "向右推动卡扣"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "洗碗机手册.txt",
+      "chosen_text_preview": "# 洗涤剂 机器可使用粉末或块状洗涤剂。 机器中只能使用洗碗机专用洗涤剂。 建议不使用含氯和磷酸盐的洗涤剂，以免污染环境。 若洗涤程序结束后餐具仍潮湿或玻璃器皿上有水垢，请联系洗涤剂生产商。 # 添加洗涤剂 请参考程序表，根据所选程序确定正确的洗涤剂用量。 请勿向洗涤剂盒中加入溶剂，有爆炸危险！ 请按照下图所示，在即将运行机器前将洗涤剂加入洗涤剂盒。1. 向右推动卡扣打开洗涤剂盒盖（A）。 [[P"
+    },
+    {
+      "id": "109",
+      "question": "如何清洁空气净化器的滤网？",
+      "old_keywords": [
+        "清洁",
+        "滤网"
+      ],
+      "new_keywords": [
+        "吸尘器或软刷清洁预过滤网",
+        "滤网更换指示灯将亮起红色"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "空气净化器手册.txt",
+      "chosen_text_preview": "# 滤网清洁 1 若滤网过脏请直接更换。滤网污染程度因使用环境和运行时长而异，清洁时间相应调整。2 更换滤网期间，可用吸尘器或软刷清洁预过滤网。 禁止 切勿用水清洗滤网。 # 更换滤网 1 需更换滤网时，滤网更换指示灯将亮起红色。每 6-12 个月更换一次滤网（滤网安装详见第 4 页）。2 更换滤网后重置指示灯。长按控制面板上的睡眠 + 自动键 5 秒以上重置指示灯。[[PIC:Manual03_"
+    },
+    {
+      "id": "113",
+      "question": "如何了解这款健身单车的技术规格？",
+      "old_keywords": [
+        "规格"
+      ],
+      "new_keywords": [
+        "最大使用者重量：136 千克",
+        "220V–240V 交流电",
+        "EN ISO 20957 国际标准"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "健身单车手册.txt",
+      "chosen_text_preview": "# 请遵守以下警告：阅读并理解本机上的所有警告。！仔细阅读并理解装配说明。装配产品时，请始终让旁观者和儿童远离。在得到指示前，请勿将电源连接到机器上。请勿在室外、潮湿或湿润环境中装配本机。请在合适的工作区域完成装配，远离行人通道和旁观者。本机部分部件可能较重或难以握持。进行涉及这些部件的装配步骤时，请由另一人协助。请勿独自完成需要重物搬运或姿势别扭的操作步骤。将本机放置在坚固、水平的平面上。请勿试"
+    },
+    {
+      "id": "124",
+      "question": "我的DCB101型号电钻指示灯闪烁时，这些闪烁标识代表什么含义？",
+      "old_keywords": [
+        "DCB101",
+        "闪烁"
+      ],
+      "new_keywords": [
+        "DCB101指示灯工作状态",
+        "过热/过冷延迟",
+        "电池组或充电器故障"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "电钻手册.txt",
+      "chosen_text_preview": "# DCB101指示灯工作状态  电池组充电中[[PIC:drill0_08]]电池组已充满[[PIC:drill0_09]]过热/过冷延迟[[PIC:drill0_10]]电池组或充电器故障[[PIC:drill0_11]]电源故障[[PIC:drill0_12]]"
+    },
+    {
+      "id": "130",
+      "question": "电钻的三年有限保修包含哪些内容？",
+      "old_keywords": [
+        "保修",
+        "三年"
+      ],
+      "new_keywords": [
+        "三年有限保修",
+        "DC9071",
+        "保修欺诈"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "电钻手册.txt",
+      "chosen_text_preview": "# 三年有限保修  除保修外，工具还享有：  # 1年免费服务  购买后第一年内，制造商将免费维护工具，更换正常使用造成的磨损部件。  2年免费服务（电池组DC9071、DC9091、DC9096、DC9280、DC9360、DC9180、DCB120、DCB127、DCB201、DCB203、DCB207）  # 3年免费服务（其他电池组）  如果电池组被擅自改装，产品保修失效。  制造商对任何"
+    },
+    {
+      "id": "131",
+      "question": "购买健身追踪器后，包装盒里应该有什么？",
+      "old_keywords": [
+        "包装"
+      ],
+      "new_keywords": [
+        "小号表带",
+        "充电线",
+        "大号表带"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "健身追踪器手册.txt",
+      "chosen_text_preview": "# 包装盒内含物品 你的健身追踪器包装盒包含： 配有小号表带的手表（颜色和材质仅供参考）\n[[PIC:fitness_trackers_01]]充电线\n[[PIC:fitness_trackers_02]]额外大号表带\n[[PIC:fitness_trackers_03]]健身追踪器的可拆卸表带提供多种颜色和材质，需单独购买。"
+    },
+    {
+      "id": "145",
+      "question": "使用冰箱冰柜时需要注意什么？只需告诉我手册中的前五条。",
+      "old_keywords": [
+        "冰柜"
+      ],
+      "new_keywords": [
+        "皮肤可能粘连在极冷表面",
+        "切勿将玻璃制品放入冷冻室"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "冰箱手册.txt",
+      "chosen_text_preview": "# 重要安全说明  # 警告  # 注意事项  • 本冰箱冰柜使用前必须按照安装说明正确安装与放置。  • 安装本冰箱冰柜前请参阅安装手册。  • 切勿拉扯电源线拔下冰箱冰柜插头。务必握紧插头，直接从插座拔出。  • 冰箱冰柜运行后，请勿触摸冷冻室低温表面，尤其是手部潮湿时。皮肤可能粘连在极冷表面。  • 清洁冰箱冰柜前请拔下电源插头。切勿损坏、过度弯折、拉扯或扭曲电源线，电源线损坏可能引发火灾或"
+    },
+    {
+      "id": "153",
+      "question": "考虑到燃油高度易燃且有毒，使用发电机时我需要注意什么？",
+      "old_keywords": [
+        "燃油"
+      ],
+      "new_keywords": [
+        "关闭发动机",
+        "严禁吸烟",
+        "燃油洒在发动机或消音器上"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "发电机手册.txt",
+      "chosen_text_preview": "# 燃油高度易燃且有毒\n加油时务必关闭发动机。\n[[PIC:generator_20]]加油时严禁吸烟或靠近明火。\n[[PIC:generator_21]]加油时注意不要将燃油洒在发动机或消音器上。如不慎吞入燃油、吸入燃油蒸汽或燃油入眼，请立即就医。如燃油溅到皮肤或衣物上，请立即用肥皂水清洗并更换衣物。操作或运输发电机时，请务必保持机身直立。如发生倾斜，燃油可能从化油器或油箱泄漏。运输发电机时，请"
+    },
+    {
+      "id": "168",
+      "question": "为了正确更换发电机的发动机机油，我需要遵循的前六个步骤是什么？",
+      "old_keywords": [
+        "机油",
+        "更换"
+      ],
+      "new_keywords": [
+        "AE01096",
+        "放油接头①",
+        "上限位置"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "发电机手册.txt",
+      "chosen_text_preview": "# AE01096 发动机机油更换\n1. 将机器放置在水平面上，暖机数分钟，然后停机，将燃油开关旋钮置于“关闭”位置，顺时针拧紧油箱盖通气旋钮。\n2. 取下盖板①。\n[[PIC:Manual18_49]]\n3. 从发电机底部拆下放油接头①，打开机油加注口盖。\n[[PIC:Manual18_50]]\n4. 将放油接头①安装到机油加注口。\n[[PIC:generator_25]]\n5. 在发动机下方放"
+    },
+    {
+      "id": "174",
+      "question": "如何在深水中登上并平衡摩托艇，确保操作的安全性和稳定性？",
+      "old_keywords": [
+        "深水"
+      ],
+      "new_keywords": [
+        "登艇平台",
+        "扶手",
+        "登艇台阶①"
+      ],
+      "chosen_chunk_idx": 2,
+      "chosen_source": "摩托艇手册.txt",
+      "chosen_text_preview": "# 训练1：登艇  1. 游至艇尾，双手放在登艇平台上，单手抓住扶手。  [[PIC:Manual40_13]]  2. 拉身体至平台跪姿，再移至座位跨坐。  [[PIC:Manual40_14]]  \n3. 将熄火绳系在手腕上，将卡扣安装到熄火开关。 4. 双手紧握车把，双脚放入脚坑。  [[PIC:Manual40_15]]  5. 反复练习登艇与平衡，直至整个过程中能保持良好平衡。\n# 提示"
+    },
+    {
+      "id": "182",
+      "question": "水泵的核心部件有哪些？",
+      "old_keywords": [
+        "核心",
+        "部件"
+      ],
+      "new_keywords": [
+        "注水螺塞",
+        "放水螺塞",
+        "反冲启动器"
+      ],
+      "chosen_chunk_idx": 2,
+      "chosen_source": "水泵手册.txt",
+      "chosen_text_preview": "# 重要标签位置\n[[PIC:Manual31_2]]\n操作本机前请仔细阅读以下标签。\n提示 请根据需要维护或更换安全及说明标签。\n# 部件说明\n油箱 油箱盖 燃油开关 空气滤清器盖 火花塞 消音器 阻风门手柄 发动机开关 机油加注口盖 放油螺塞 反冲启动器 机油警告灯 油门手柄 注水螺塞 放水螺塞\n[[PIC:pump_16]][[PIC:pump_17]]"
+    },
+    {
+      "id": "192",
+      "question": "如何安全更换温控器的电池，确保更换后设备功能正常？",
+      "old_keywords": [
+        "电池",
+        "更换"
+      ],
+      "new_keywords": [
+        "电池低电量图标",
+        "两分钟内完成电池更换",
+        "永久存储在内存中"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "可编程温控器手册.txt",
+      "chosen_text_preview": "# 更换电池 温控器需电池供电。电池低电量图标出现时请立即更换新电池。该图标会在电池耗尽前约两个月显示。 即使未出现电池低电量图标，也应每年更换一次电池，或离家超过一个月前更换。 若两分钟内完成电池更换，无需重新设置时间和日期。所有其他设置将永久存储在内存中，无需电池供电。 [[PIC:Manual36_40]] 注：更换电池时建议使用碱性电池。"
+    },
+    {
+      "id": "199",
+      "question": "使用和操作VR头显时应采取哪些安全预防措施，以确保用户安全和设备使用寿命？",
+      "old_keywords": [
+        "预防"
+      ],
+      "new_keywords": [
+        "游玩区域",
+        "立即停止使用",
+        "每游玩1小时，休息15分钟"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "VR头显手册.txt",
+      "chosen_text_preview": "使用说明书\n# 警告 使用本产品前，请仔细阅读本说明书及配套硬件的相关手册，并遵守所有警告及安装说明。请妥善保管，以备日后参考。\n● VR头显不适用于12岁以下儿童。\n● 若您感到疲劳、头晕、头昏、恶心、身体不适、处于醉酒或服药状态，或运动感、平衡感受损，请勿使用PS VR。若您患有严重疾病，使用PS VR前请咨询医生。\n● 佩戴VR头显会限制您对周围真实环境的视野。VR头显无法检测障碍物。使用前"
+    },
+    {
+      "id": "204",
+      "question": "如何将功能键盘搭配CAM软件使用？",
+      "old_keywords": [
+        "CAM"
+      ],
+      "new_keywords": [
+        "CAM软件",
+        "板载配置文件"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "功能键盘手册.txt",
+      "chosen_text_preview": "# 7. 使用功能键盘搭配CAM软件 # A. 下载并安装CAM软件 前往官网下载最新版CAM软件 # B. 设置CAM配置文件并存储至键盘 本功能键盘自带四个板载配置文件，可通过CAM软件设置并保存。配置信息保存后，无需运行CAM即可使用已存储的灯光、宏命令等功能。 # C. 配置文件切换控制 按下FN（功能键）+F1、F2、F3或F4中任意一键，即可切换至对应编号（1至4）的配置文件。 # E"
+    },
+    {
+      "id": "207",
+      "question": "如何安装儿童电动摩托车的前轮?",
+      "old_keywords": [
+        "前轮"
+      ],
+      "new_keywords": [
+        "前轴",
+        "把手管",
+        "垫片"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "儿童电动摩托车手册.txt",
+      "chosen_text_preview": "# 3. 安装前轮。  [[PIC:Manual26_6]]  \\n· 按照步骤1所示，将前轴穿过两侧把手管及前轮，两侧把手管内外均需安装垫片。  \\n· 使用两个螺母将前轴及车轮固定在把手管上，使用随产品提供的扳手拧紧螺母直至螺纹尽头。  [[PIC:Manual26_7]]  \\n间隙  \\n注意  前轮及前轴组装完成后，请检查车轮与把手管之间的间隙。若间隙过大、车轮定位不稳，建议在车轮与把手"
+    },
+    {
+      "id": "213",
+      "question": "如何查看蓝牙激光鼠标的电量状态?",
+      "old_keywords": [
+        "电量"
+      ],
+      "new_keywords": [
+        "电量 LED 指示灯",
+        "琥珀色",
+        "控制面板 > 鼠标 > 蓝牙"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "蓝牙激光鼠标手册.txt",
+      "chosen_text_preview": "# 5 激光鼠标使用 按照 “4. 激光鼠标设置” 中的说明插入 USB 蓝牙接收器并完成鼠标蓝牙连接环境设置后，您即可立即开始使用鼠标。 # 5.1 激光鼠标电量状态 蓝牙鼠标配备电量 LED 指示灯。当电量耗尽时，LED 指示灯变为琥珀色。请立即更换电池。（顶部 LED 指示灯与底部指示灯状态一致） [[PIC:Manual27_14]] 如需查看更详细的鼠标电量信息，请前往 控制面板 > 鼠"
+    },
+    {
+      "id": "217",
+      "question": "如何安装烤箱门?",
+      "old_keywords": [
+        "安装",
+        "门"
+      ],
+      "new_keywords": [
+        "抬起卡扣",
+        "向前推至极限位置"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "烤箱手册.txt",
+      "chosen_text_preview": "# 拆卸烤箱门# 拆卸门体：1. 完全打开烤箱门。2. 抬起卡扣并向前推至极限位置（图1）。[[PIC:oven_01]]3. 将烤箱门关至最大角度（A），向上抬起（B）并转动（C）直至脱开（D）（图2）。[[PIC:oven_02]]# 安装门体：1. 将铰链装入对应位置。2. 完全打开烤箱门。3. 放下两个卡扣。4. 关闭烤箱门。"
+    },
+    {
+      "id": "222",
+      "question": "如何使用烤箱的烤架?",
+      "old_keywords": [
+        "烤架"
+      ],
+      "new_keywords": [
+        "烤架（图3）",
+        "凸面朝上",
+        "支架"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "烤箱手册.txt",
+      "chosen_text_preview": "[[PIC:oven_09]]烤架（图3）\n用于烧烤食物，或作为锅具、蛋糕模及其他烹饪容器的支架。可放置在任意可用层位。烤架可凸面朝上或朝下安装。\n[[PIC:oven_10]]# 催化侧面板（图4）\n该面板带有特殊微孔搪瓷涂层，可吸附油脂飞溅物。烹饪油脂较多的食物后，建议执行自动清洁程序（参见清洁章节）。"
+    },
+    {
+      "id": "232",
+      "question": "如何设置混合即时相机的自动打印模式?",
+      "old_keywords": [
+        "自动",
+        "打印"
+      ],
+      "new_keywords": [
+        "打印模式选择器",
+        "AUTO",
+        "图像保存后立即开始打印"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "相机手册.txt",
+      "chosen_text_preview": "# ■ 自动打印模式 将侧面的打印模式选择器切换到“AUTO”。\n[[PIC:Manual29_30]] 拍摄画面上会出现以下图标。\n[[PIC:Manual29_31]] 图像保存后立即开始打印。\n[[PIC:Manual29_32]]"
+    },
+    {
+      "id": "241",
+      "question": "If this is the first time to use airfryer, What should I do before first use?",
+      "old_keywords": [
+        "before first use"
+      ],
+      "new_keywords": [
+        "preheating",
+        "smoke",
+        "first time"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "汇总英文手册.txt",
+      "chosen_text_preview": "# Airfrying  # Caution This is an Air fryer that works on hot air.Do not fill the pan with oil,fryingfat or any other liquid.\nDo not touch hot surfaces.Use handles orknobs.Handle the hot pan with oven"
+    },
+    {
+      "id": "244",
+      "question": "How the ship steers?",
+      "old_keywords": [
+        "steer"
+      ],
+      "new_keywords": [
+        "handlebars",
+        "jet thrust nozzle",
+        "trolling speed"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "汇总英文手册.txt",
+      "chosen_text_preview": "EJU01021  \n# Steering system  \nYour watercraft can be steered by turning the handlebars   $\\textcircled{1}$   the same direction you wish to travel.  \nWhen the handlebars are turned, the angle of the "
+    },
+    {
+      "id": "250",
+      "question": "How do I use the jet wash function to clean the boat after using it?",
+      "old_keywords": [
+        "jet wash"
+      ],
+      "new_keywords": [
+        "jet wash switch",
+        "jet wash handle lever",
+        "shut-off valve"
+      ],
+      "chosen_chunk_idx": 3,
+      "chosen_source": "汇总英文手册.txt",
+      "chosen_text_preview": "# TIP:   The water supply will start 5 seconds after the jet wash switch is pushed.   The water flow can be adjusted to 3 levels. Push the jet wash switch to adjust the water flow level.  [[PIC:Manu"
+    },
+    {
+      "id": "255",
+      "question": "When I am sailing, how do I check the engine oil level to ensure continued sailing?",
+      "old_keywords": [
+        "engine oil"
+      ],
+      "new_keywords": [
+        "oil-fill cap",
+        "dipstick",
+        "Figure 59"
+      ],
+      "chosen_chunk_idx": 2,
+      "chosen_source": "汇总英文手册.txt",
+      "chosen_text_preview": "# Checking the Engine-Oil Level  Note:  Check the oil when the engine is cold.  Important:  If you overfill or underfill the engine crankcase with oil and run the engine, you may damage the engine.  1"
+    },
+    {
+      "id": "265",
+      "question": "How to use the energy saving mode of a coffee machine?",
+      "old_keywords": [
+        "energy saving"
+      ],
+      "new_keywords": [
+        "press Espresso button for 3 seconds",
+        "blink to indicate current setting",
+        "power off mode after 30 minutes"
+      ],
+      "chosen_chunk_idx": 2,
+      "chosen_source": "汇总英文手册.txt",
+      "chosen_text_preview": "# To change this setting1.With machine being turned of, press   and hold the Espresso button for 3 seconds.[[PIC:Manual07_6]]  2.The Espresso button will blink to indicate  the current setting.[[PIC:M"
+    },
+    {
+      "id": "268",
+      "question": "How should I do if I want to empty the system before not in use, for frost protection or before maintenance?",
+      "old_keywords": [
+        "empty"
+      ],
+      "new_keywords": [
+        "emptying mode",
+        "blink alternatively"
+      ],
+      "chosen_chunk_idx": 1,
+      "chosen_source": "汇总英文手册.txt",
+      "chosen_text_preview": "# EMPTYING THE SYSTEM BEFORE A PERIOD OF NON-USE AND  FOR FROST PROTECTION, OR BEFORE A REPAIR\nNOTE:  your machine will be blocked for 10 minutes after emptying mode. 1.To enter the emptying  mode, pr"
+    }
+  ]
+}
